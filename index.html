@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<script defer src="./app.js"></script>
+	<title>Login Form </title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<form action="#">
+			<h1>Complaints</h1>
+            <p>Help us improve our service</p>
+            <label>Full name*</label>
+			<input type="text" class="inputFields" name="fieldOne" id="fieldOne" placeholder="First Name" required><br>
+			<span class="hidden"  id="errorOne">First Name is required </span>
+            <br>
+			<input type="text" class="inputFields" name="fieldTwo" id="fieldTwo" placeholder="Last Name" required><br>
+			<span class="hidden" id="errorTwo">Last Name is  required </span>
+            <br>
+            <label id="e">Email*</label>
+            <input type="text" class="inputFields" name="fieldThree" id="fieldThree" placeholder="Email" required><br>
+			<span class="hidden" id="errorThree">Email is required</span>
+            <br>
+            <label>Phone</label>
+            <input type="text" class="inputFields" name="fieldfour" id="fieldfour" placeholder="Phone" required>
+			
+			<br><br>
+            <label>Where did we wrong*</label>
+            <input type="text" class="inputFields" name="fieldfive" id="fieldFive" placeholder="Where did we go wrong" required><br>
+			<span class="hidden" id="errorFive">Fill the details</span>
+            <br><br>
+            <input type="submit" class="submitButton" id="submitButton" value="Submit" onclick="fSubmit()">
+		</form>
+		<nav class="navi">
+			<a href="t.html">Click here</a><p id="p11">to view the stored data!</p>
+		</nav>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/^[a-zA-Z]+$/
+/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+/^\d{0,9}$/
+
+fieldTwo.addEventListener("keyup", () => {
+	validateField(fieldTwo, errorTwo,/^[a-zA-Z]+$/)
+})
+function validateField(fieldTwo, errorTwo,regex) {
+	if (fieldTwo.value.trim() === "") {
+		errorTwo.classList.remove("hidden");
+		errorTwo.classList.add("error");
+		fieldTwo.classList.add("errorInput");
+		return false;
+	}
+	if (!regex.test(fieldTwo.value.trim())){
+		errorTwo.classList.remove("hidden");
+		errorTwo.classList.add("error");
+		fieldTwo.classList.add("errorInput");
+		return false;
+	}
+
+	errorTwo.classList.add("hidden");
+	errorTwo.classList.remove("error");
+	fieldTwo.classList.remove("errorInput");
+	return true;
+}
+
+fieldThree.addEventListener("keyup", () => {
+	validateField(fieldThree, errorThree,/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)
+})
+function validateField(fieldThree, errorThree,regex) {
+	if (fieldThree.value.trim() === "") {
+		errorThree.classList.remove("hidden");
+		errorThree.classList.add("error");
+		fieldThree.classList.add("errorInput");
+		return false;
+	}
+	if (!regex.test(fieldThree.value.trim())){
+		errorThree.classList.remove("hidden");
+		errorThree.classList.add("error");
+		fieldThree.classList.add("errorInput");
+		return false;
+	}
+	errorThree.classList.add("hidden");
+	errorThree.classList.remove("error");
+	fieldThree.classList.remove("errorInput");
+	return true;
+}
+
+fieldFive.addEventListener("keyup", () => {
+	validateField(fieldFive, errorFive,/^[a-zA-Z]+$/)
+})
+function validateField(fieldFive, errorFive,regex) {
+	if (fieldFive.value.trim() === "") {
+		errorFive.classList.remove("hidden");
+		errorFive.classList.add("error");
+		fieldFive.classList.add("errorInput");
+		return false;
+	}
+	if (!regex.test(fieldFive.value.trim())){
+		errorFive.classList.remove("hidden");
+		errorFive.classList.add("error");
+		fieldFive.classList.add("errorInput");
+		return false;
+	}
+	errorFive.classList.add("hidden");
+	errorFive.classList.remove("error");
+	fieldFive.classList.remove("errorInput");
+	return true;
+}
